@@ -1,0 +1,66 @@
+<center>
+    <h1 id="skor1"></h1>
+    <canvas id="game" height="400" width="400" ></canvas>
+    <div id="entry" class="entry">
+        <h1>Snake Game</h1>
+        <button style="margin-top:90px;" class="restartButton" onclick="restart()">Oyna</button>
+    </div>
+    <div id="GameOver" class="GameOver">
+        <h1>Game Over</h1>
+        <h1 style="font-size:40px;" id="skor2"></h1>
+        <button class="restartButton" onclick="restart()">Oyna</button>
+    </div>
+</center>
+
+<script src="script.js"></script>
+<style>
+    body {
+        background-color:black;
+    }
+
+
+    canvas {
+        margin-top:-15px;
+        display:none;
+        
+     
+    }
+    h1 {
+        color:white;
+        font-size:50px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+   
+    .entry {
+        background-color:rgba(255, 255, 0, 0.75);
+        height:400px;
+        width:400px;
+        margin-top:100px;
+        
+    }
+    .GameOver {
+        background-color:rgba(255, 255, 0, 0.75);
+        height:400px;
+        width:400px;
+        margin-top:100px;
+        display:none;
+    }
+    .restartButton {
+        height:40px;
+        width:120px;
+        background-color:white;
+        color:rgba(255, 255, 0, 0.75);
+        border:none;
+        border-radius:5px;
+        font-weight:bold;
+        font-size:30px;
+        margin-top:25px; 
+        transition:0.2s;
+    }
+
+    .restartButton:hover {
+        transform:scale(1.1);
+    }
+   
+</style>
